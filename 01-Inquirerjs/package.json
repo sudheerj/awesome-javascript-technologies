@@ -1,0 +1,9 @@
+{
+  "name": "01-Inquirerjs",
+  "version": "0.0.1",
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "cmdify": "^0.0.4",
+    "inquirer": "^3.3.0"
+  }
+}
