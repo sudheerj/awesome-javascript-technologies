@@ -71,7 +71,7 @@ This prompt type is used to take the input from user as set of characters. It i
 ```
 <img src="images/input.png" height="200">
 
-### Confirm: ###
+### Confirm: ###
 
 This prompt is used to determine or confirm the question. It accepts **type, name, message[, default]** properties.
 ```
@@ -84,7 +84,8 @@ This prompt is used to determine or confirm the question. It accepts **type, n
 ```
 <img src="images/confirm.png" height="200">
 
-### List:###  The prompt is used to select one item among multiple choices. It accepts **type, name, message, choices[, default, filter]** properties.
+### List:###
+The prompt is used to select one item among multiple choices. It accepts **type, name, message, choices[, default, filter]** properties.
 ```
 {
     type: 'list',
@@ -98,7 +99,8 @@ This prompt is used to determine or confirm the question. It accepts **type, n
 ```
 <img src="images/list.png" height="200">
 
-### RawList:###   This prompt type is similar to previous list type but the selection is controlled through indexes or numbers. It accepts **type, name, message, choices[, default, filter]** properties. The default selection should be an index value.
+### RawList:###
+This prompt type is similar to previous list type but the selection is controlled through indexes or numbers. It accepts **type, name, message, choices[, default, filter]** properties. The default selection should be an index value.
 ```
 {
     type: 'rawlist',
@@ -112,7 +114,8 @@ This prompt is used to determine or confirm the question. It accepts **type, n
 ```
 <img src="images/rawlist.png" height="200">
 
-### Expand:###  This prompt list is similar to rawlist but you need to define single character keys for the choices. If the default key is not provided then help option(h) added by prompt selected as default option.
+### Expand:### 
+This prompt list is similar to rawlist but you need to define single character keys for the choices. If the default key is not provided then help option(h) added by prompt selected as default option.
 ```
 choices: [
     {
@@ -139,7 +142,8 @@ choices: [
 ```
 <img src="images/expand.png" height="200">
 
-### Checkbox:###  This prompt also displays list options but in the form of checkboxes and it allows selection for multiple items. You can make default selection as checked by {checked: true}. It accepts **type, name, message, choices[, filter, validate, default] **properties.
+### Checkbox:###
+This prompt also displays list options but in the form of checkboxes and it allows selection for multiple items. You can make default selection as checked by {checked: true}. It accepts **type, name, message, choices[, filter, validate, default]** properties.
 ```
 {
     type: 'checkbox',
@@ -192,7 +196,8 @@ choices: [
 ```
 <img src="images/checkbox.png" height="200">
 
-### Password: ### The password input is provided as hidden text or masked characters(using mask property). It accepts **type, name, message[, default, filter, validate] **properties.
+### Password: ###
+The password input is provided as hidden text or masked characters(using mask property). It accepts **type, name, message[, default, filter, validate]** properties.
 ```
 [
     {
@@ -211,7 +216,7 @@ choices: [
 ]
 ```
 <img src="images/password.png" height="200">
-### Editor:###
+### Editor:###
 This prompt allows the instace of user preferred editor on a temporary file. The editor to be used is selected by reading the $VISUAL or $EDITOR environment variables. If neither of those are present, notepad (on Windows) or vim (Linux or Mac) is used.It accepts **type, name, message[, default, filter, validate]** properties.
 ```
 {
@@ -257,7 +262,7 @@ prompts.onNext({ /* question... */ });
 // When you're done
 prompts.onCompleted();
 ```
-##My feature requests:##
+## My feature requests:##
 
 The parent and child hierarchal prompts displayed at the same time for a selection criteria gives easy to select more options in a single attempt. The design would be like this(the number of child items can be selected while selecting parent item ).
 ```
