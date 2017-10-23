@@ -140,7 +140,7 @@ choices: [
     }
 ]
 ```
-<img src="images/expand.png" height="200">
+<img src="images/expand.png" height="100">
 
 ### Checkbox:
 This prompt also displays list options but in the form of checkboxes and it allows selection for multiple items. You can make default selection as checked by {checked: true}. It accepts **type, name, message, choices[, filter, validate, default]** properties.
@@ -248,7 +248,8 @@ var i = 4;
 var ui = new BottomBar({bottomBar: loader[i % 4]});
 ```
 
-<img src="images/bottom-bar.png" height="500">
+<img src="images/bottom-bar.png" height="200">
+
 You can make above prompts more interesting by adding the options such as **pagination(pagination, pageSize), hierarchical, nested, separator and recursive prompts**. Also the prompts displayed conditionally using When property. Please look at the examples for more details.
 
 # Reactive Interface: #
@@ -273,9 +274,9 @@ The parent and child hierarchal prompts displayed at the same time for a select
 ```
 Option1
 
-          Option1.1
+         Option1.1
 
-          Option 1.2
+         Option 1.2
 
          Option1.3
 
@@ -283,7 +284,7 @@ Option2
 
         Option2.1
 
-       Option2.2
+        Option2.2
 
 --------
 ```
