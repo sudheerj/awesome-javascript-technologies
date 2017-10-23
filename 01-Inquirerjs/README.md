@@ -67,6 +67,7 @@ The possible values are ** input, confirm, list, rawlist, expand, checkbo
     }
 }
 ```
+<img src="images/input.png" height="500">
 
 ### Confirm:###  This prompt is used to determine or confirm the question. It accepts **type, name, message[, default]** properties.
 ```
@@ -77,6 +78,7 @@ The possible values are ** input, confirm, list, rawlist, expand, checkbo
     default: true
 }
 ```
+<img src="images/confirm.png" height="500">
 
 ### List:###  The prompt is used to select one item among multiple choices. It accepts **type, name, message, choices[, default, filter]** properties.
 ```
@@ -90,6 +92,7 @@ The possible values are ** input, confirm, list, rawlist, expand, checkbo
     }
 }
 ```
+<img src="images/list.png" height="500">
 
 ### RawList:###   This prompt type is similar to previous list type but the selection is controlled through indexes or numbers. It accepts **type, name, message, choices[, default, filter]** properties. The default selection should be an index value.
 ```
@@ -103,6 +106,7 @@ The possible values are ** input, confirm, list, rawlist, expand, checkbo
     }
 }
 ```
+<img src="images/rawlist.png" height="500">
 
 ### Expand:###  This prompt list is similar to rawlist but you need to define single character keys for the choices. If the default key is not provided then help option(h) added by prompt selected as default option.
 ```
@@ -129,6 +133,7 @@ choices: [
     }
 ]
 ```
+<img src="images/expand.png" height="500">
 
 ### Checkbox:###  This prompt also displays list options but in the form of checkboxes and it allows selection for multiple items. You can make default selection as checked by {checked: true}. It accepts **type, name, message, choices[, filter, validate, default] **properties.
 ```
@@ -181,6 +186,7 @@ choices: [
         }
     ],
 ```
+<img src="images/checkbox.png" height="500">
 
 ### Password: ### The password input is provided as hidden text or masked characters(using mask property). It accepts **type, name, message[, default, filter, validate] **properties.
 ```
@@ -200,7 +206,7 @@ choices: [
     }
 ]
 ```
-
+<img src="images/password.png" height="500">
 ### Editor: ### This prompt allows the instace of user preferred editor on a temporary file. The editor to be used is selected by reading the $VISUAL or $EDITOR environment variables. If neither of those are present, notepad (on Windows) or vim (Linux or Mac) is used.It accepts **type, name, message[, default, filter, validate]** properties.
 ```
 {
@@ -216,7 +222,7 @@ choices: [
     }
 }
 ```
-
+<img src="images/editor.png" height="500">
 ## User interfaces using bottom bar:## This UI present a fixed text at the bottom of a free text zone while outputting command outputs. For example, the loading message displayed as below.
 ```
 var loader = [
@@ -228,7 +234,7 @@ var loader = [
 var i = 4;
 var ui = new BottomBar({bottomBar: loader[i % 4]});
 ```
-
+<img src="images/bottom-bar.png" height="500">
 You can make above prompts more interesting by adding the options such as **pagination(pagination, pageSize), hierarchical, nested, separator and recursive prompts**. Also the prompts displayed conditionally using When property. Please look at the examples for more details.
 
 # Reactive Interface: #

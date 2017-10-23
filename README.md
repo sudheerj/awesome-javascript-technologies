@@ -7,5 +7,5 @@ blog entry with a detailed analysis and github examples.
 
 Below is the list of technologies covered in this series:
 
-1. **[Week 1: October 22, 2017](https://github.com/sudheerj/awesome-javascript-technologies/blob/master/01-Inquirerjs)** Interactive CommandLine Interface using Inquirer(http://sudheerjonna.com/blog/2017/10/22/interactive-command-line-interface-using-inquirerjs/) How the user interactive session is made easy with Inquirer library
+1. **[Week 1: October 22, 2017](https://github.com/sudheerj/awesome-javascript-technologies/blob/master/01-Inquirerjs)** [Interactive CommandLine Interface using Inquirer](http://sudheerjonna.com/blog/2017/10/22/interactive-command-line-interface-using-inquirerjs/) How the user interactive session is made easy with Inquirer library
       using question and answer prompting mechanism. 
