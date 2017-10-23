@@ -1,9 +1,13 @@
 # awesome-javascript-technologies
 Explore various JS technologies
 
-# 50 awesome JS technologies
-This git repo discusses about 50 popular JS technologies,frameworks or libraries avaialble in the market. Each technology detailed with an
-blog entry with a detailed analysis and github examples.
+# 50 Awesome JavaScript Technologies
+This git repo discusses about 50 popular JS technologies,frameworks or libraries avaialble in the market. Each technology detailed with an blog entry with a detailed analysis and github examples.
+
+<hr/>
+
+To encourage us and if you like the project then click start(💫)
+<hr/>
 
 Below is the list of technologies covered in this series:
 
