@@ -214,7 +214,7 @@ The password input is provided as hidden text or masked characters(using mask pr
     }
 ]
 ```
-<img src="images/password.png" height="200">
+<img src="images/password.png" height="100">
 
 ### Editor:
 
@@ -248,7 +248,7 @@ var i = 4;
 var ui = new BottomBar({bottomBar: loader[i % 4]});
 ```
 
-<img src="images/bottom-bar.png" height="200">
+<img src="images/bottom-bar.png" height="100">
 
 You can make above prompts more interesting by adding the options such as **pagination(pagination, pageSize), hierarchical, nested, separator and recursive prompts**. Also the prompts displayed conditionally using When property. Please look at the examples for more details.
 
