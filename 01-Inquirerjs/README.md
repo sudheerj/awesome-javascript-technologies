@@ -71,7 +71,7 @@ This prompt type is used to take the input from user as set of characters. It i
 ```
 <img src="images/input.png" height="200">
 
-### Confirm: ###
+### Confirm: 
 
 This prompt is used to determine or confirm the question. It accepts **type, name, message[, default]** properties.
 ```
@@ -84,7 +84,7 @@ This prompt is used to determine or confirm the question. It accepts **type, n
 ```
 <img src="images/confirm.png" height="200">
 
-### List:###
+### List:
 The prompt is used to select one item among multiple choices. It accepts **type, name, message, choices[, default, filter]** properties.
 ```
 {
@@ -99,7 +99,7 @@ The prompt is used to select one item among multiple choices. It accepts **type
 ```
 <img src="images/list.png" height="200">
 
-### RawList:###
+### RawList:
 This prompt type is similar to previous list type but the selection is controlled through indexes or numbers. It accepts **type, name, message, choices[, default, filter]** properties. The default selection should be an index value.
 ```
 {
@@ -114,7 +114,7 @@ This prompt type is similar to previous list type but the selection is controlle
 ```
 <img src="images/rawlist.png" height="200">
 
-### Expand:### 
+### Expand:
 This prompt list is similar to rawlist but you need to define single character keys for the choices. If the default key is not provided then help option(h) added by prompt selected as default option.
 ```
 choices: [
@@ -142,7 +142,7 @@ choices: [
 ```
 <img src="images/expand.png" height="200">
 
-### Checkbox:###
+### Checkbox:
 This prompt also displays list options but in the form of checkboxes and it allows selection for multiple items. You can make default selection as checked by {checked: true}. It accepts **type, name, message, choices[, filter, validate, default]** properties.
 ```
 {
@@ -196,10 +196,9 @@ This prompt also displays list options but in the form of checkboxes and it allo
 ```
 <img src="images/checkbox.png" height="200">
 
-### Password: ###
+### Password: 
 The password input is provided as hidden text or masked characters(using mask property). It accepts **type, name, message[, default, filter, validate]** properties.
-```
-[
+```[
     {
         type: 'password',
         message: 'Enter a password',
@@ -216,10 +215,9 @@ The password input is provided as hidden text or masked characters(using mask pr
 ]
 ```
 <img src="images/password.png" height="200">
-### Editor:###
+### Editor:
 This prompt allows the instace of user preferred editor on a temporary file. The editor to be used is selected by reading the $VISUAL or $EDITOR environment variables. If neither of those are present, notepad (on Windows) or vim (Linux or Mac) is used.It accepts **type, name, message[, default, filter, validate]** properties.
-```
-{
+```{
     type: 'editor',
     name: 'biography',
     message: 'Please write a short biography of at least 3 lines.',
@@ -235,8 +233,7 @@ This prompt allows the instace of user preferred editor on a temporary file. The
 <img src="images/editor.png" height="200">
 ## User interfaces using bottom bar:## 
 This UI present a fixed text at the bottom of a free text zone while outputting command outputs. For example, the loading message displayed as below.
-```
-var loader = [
+```var loader = [
   '/ Installing',
   '| Installing',
   '\\ Installing',
@@ -282,7 +279,6 @@ Option2
 
 --------
 ```
-
 # Summary:#
 
 The InquirerJS library provides an easy to use command line interface for prompting the questions and then followed by answers. Even though there are full blown CLI tools available, this library is easy to use with full featured set of commands. Hope this library is further improved and helpful to the community as favorite CLI tool.
