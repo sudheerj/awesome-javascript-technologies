@@ -215,8 +215,11 @@ The password input is provided as hidden text or masked characters(using mask pr
 ]
 ```
 <img src="images/password.png" height="200">
+
 ### Editor:
+
 This prompt allows the instace of user preferred editor on a temporary file. The editor to be used is selected by reading the $VISUAL or $EDITOR environment variables. If neither of those are present, notepad (on Windows) or vim (Linux or Mac) is used.It accepts **type, name, message[, default, filter, validate]** properties.
+
 ```{
     type: 'editor',
     name: 'biography',
@@ -231,8 +234,10 @@ This prompt allows the instace of user preferred editor on a temporary file. The
 }
 ```
 <img src="images/editor.png" height="200">
-## User interfaces using bottom bar:## 
+
+## User interfaces using bottom bar:
 This UI present a fixed text at the bottom of a free text zone while outputting command outputs. For example, the loading message displayed as below.
+
 ```var loader = [
   '/ Installing',
   '| Installing',
@@ -242,12 +247,14 @@ This UI present a fixed text at the bottom of a free text zone while outputting 
 var i = 4;
 var ui = new BottomBar({bottomBar: loader[i % 4]});
 ```
+
 <img src="images/bottom-bar.png" height="500">
 You can make above prompts more interesting by adding the options such as **pagination(pagination, pageSize), hierarchical, nested, separator and recursive prompts**. Also the prompts displayed conditionally using When property. Please look at the examples for more details.
 
 # Reactive Interface: #
 
 This library uses JS Reactive Extension to handle events and async flows in order to ask questions dynamically. In this case we need to pass reactive subject as instance instead of passing normal questions array object.
+
 ```
 var prompts = new Rx.Subject();
 inquirer.prompt(prompts);
@@ -259,7 +266,8 @@ prompts.onNext({ /* question... */ });
 // When you're done
 prompts.onCompleted();
 ```
-## My feature requests:##
+
+## My feature requests:
 
 The parent and child hierarchal prompts displayed at the same time for a selection criteria gives easy to select more options in a single attempt. The design would be like this(the number of child items can be selected while selecting parent item ).
 ```
@@ -279,7 +287,7 @@ Option2
 
 --------
 ```
-# Summary:#
+# Summary:
 
 The InquirerJS library provides an easy to use command line interface for prompting the questions and then followed by answers. Even though there are full blown CLI tools available, this library is easy to use with full featured set of commands. Hope this library is further improved and helpful to the community as favorite CLI tool.
 
