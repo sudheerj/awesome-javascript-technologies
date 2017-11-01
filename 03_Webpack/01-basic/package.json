@@ -1,0 +1,30 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "Basic webpack app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudheerj/awesome-javascript-technologies.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Sudheer Jonna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudheerj/awesome-javascript-technologies/issues"
+  },
+  "homepage": "https://github.com/sudheerj/awesome-javascript-technologies/tree/master/03_Webpack#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
