@@ -176,7 +176,9 @@ CSS and Babel loaders most commonly used in web applications.
 
 Let’s say we have a CSS file  called “test.css” and we want to place it's content into <style>test CSS content</style> tag inside our HTML page. We can accomplish that using two loaders: css-loader and style-loader.
 
-### CSS-loader: If the webpack finds CSS dependency in your module then it handover the file to this loader and it load CSS, dependent CSS files(@import) into JSON file.
+### CSS-loader:
+
+If the webpack finds CSS dependency in your module then it handover the file to this loader and it load CSS, dependent CSS files(@import) into JSON file.
 Style-loader: Take the JSON file and add it to style tag(<style>test CSS content</style>). After that it inserts inside HTML file.
 We can define this in shorthand format as well.
 ```
@@ -288,9 +290,11 @@ The package.json has to be defined with scripts section to create bundles for bo
 ```
 Webpack provides two interfaces
 
-Webpack CLI tool: This comes by default as part of webpack and no need to install separately. This is recommended for production builds.
+### Webpack CLI tool:
+This comes by default as part of webpack and no need to install separately. This is recommended for production builds.
 
-Webpack-dev-server tool :  An Express nodejs server which runs at port 8080 and you need to install separately. This is for development purpose only to ease live reloading etc features. These features configured through CLI and devServer configuration object in webpack.config.js as well.
+### Webpack-dev-server tool : 
+An Express nodejs server which runs at port 8080 and you need to install separately. This is for development purpose only to ease live reloading etc features. These features configured through CLI and devServer configuration object in webpack.config.js as well.
 ```
 //Via CLI
 webpack-dev-server --hot --inline
