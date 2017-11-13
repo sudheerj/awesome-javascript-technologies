@@ -12,6 +12,8 @@ It works with two major goals
 
 Currently this bundler converts below modules with dependencies to static assets
 
+<img src="images/one.png" height="200">
+
 
 # Building blocks:
 
@@ -272,7 +274,7 @@ Node API:  Access the webpack configuration file and apply the plugin using com
 
 Generally you might observed that most of the applications having many webpack configuration files based on environment.
 
-
+<img src="images/two.png" height="200">
 
 This is because some of the features available in development mode, some other for Production and few of them for both the environments.
 
